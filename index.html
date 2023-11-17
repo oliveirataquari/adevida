@@ -6,9 +6,35 @@
 <body>
 
 <h1>Últimas Postagens do Blog 3</h1>
-<div id="blogPosts"></div>
 
-<rssapp-wall id="OusJq8l84U9B7iqD"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+<div id="blog-posts"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var feedURL = 'https://oliveirawebsites.wordpress.com/feed'; // Substitua SEUSITE pelo seu site WordPress.com oliveirawebsites.wordpress.com
+
+    fetch(feedURL)
+        .then(response => response.text())
+        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+        .then(data => {
+            var items = data.querySelectorAll('item');
+            var postsHTML = '';
+
+            items.forEach(function (item) {
+                var title = item.querySelector('title').textContent;
+                var link = item.querySelector('link').textContent;
+                var description = item.querySelector('description').textContent;
+
+                postsHTML += '<h2><a href="' + link + '">' + title + '</a></h2>';
+                postsHTML += '<p>' + description + '</p>';
+            });
+
+            document.getElementById('blog-posts').innerHTML = postsHTML;
+        })
+        .catch(err => console.error('Erro ao carregar o feed RSS', err));
+});
+</script>
+
 
 </body>
 </html>
