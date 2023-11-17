@@ -8,39 +8,7 @@
 <h1>Últimas Postagens do Blog 3</h1>
 <div id="blogPosts"></div>
 
-<script>
-// URL do feed RSS do seu blog do Blogger
-const feedURL = 'https://rss.app/feeds/p67NPyWHloyg3gnV.xml';
-
-// Função para carregar o feed RSS
-function carregarFeed() {
-    fetch(feedURL)
-        .then(response => response.text())
-        .then(data => {
-            // Converter a resposta XML em um objeto Document
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(data, 'text/xml');
-            
-            // Extrair e exibir os títulos e links das postagens
-            const entries = xmlDoc.querySelectorAll('item');
-            let postsHTML = '';
-            entries.forEach(entry => {
-                const title = entry.querySelector('title').textContent;
-                const link = entry.querySelector('link').textContent;
-                postsHTML += `<p><a href="${link}" target="_blank">${title}</a></p>`;
-            });
-            
-            // Exibir os títulos das postagens no elemento com id "blogPosts"
-            document.getElementById('blogPosts').innerHTML = postsHTML;
-        })
-        .catch(error => {
-            console.error('Ocorreu um erro ao carregar o feed:', error);
-        });
-}
-
-// Chamar a função para carregar o feed ao carregar a página
-window.onload = carregarFeed;
-</script>
+<rssapp-wall id="OusJq8l84U9B7iqD"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 
 </body>
 </html>
