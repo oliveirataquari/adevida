@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exemplo de Incorporação do Blog do Blogger 4</title>
+	<title>Instafeed on Your Website</title>
+	<style type="text/css">
+		a img{ 
+			width: 25%;
+		}
+	</style>
 </head>
 <body>
-
-<h1>Últimas Postagens do Blog 4</h1>
-
-<div id="blog-posts"></div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var feedURL = 'https://oliveirawebsites.wordpress.com/feed'; // Substitua SEUSITE pelo seu site WordPress.com oliveirawebsites.wordpress.com
-
-    fetch(feedURL)
-        .then(response => response.text())
-        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-        .then(data => {
-            var items = data.querySelectorAll('item');
-            var postsHTML = '';
-
-            items.forEach(function (item) {
-                var title = item.querySelector('title').textContent;
-                var link = item.querySelector('link').textContent;
-                var description = item.querySelector('description').textContent;
-
-                postsHTML += '<h2><a href="' + link + '">' + title + '</a></h2>';
-                postsHTML += '<p>' + description + '</p>';
-            });
-
-            document.getElementById('blog-posts').innerHTML = postsHTML;
-        })
-        .catch(err => console.error('Erro ao carregar o feed RSS', err));
-});
-</script>
+	<h1 style="text-align: center">Show Instagram Feed on your Website</h1>
+    	<div id="instafeed-container"></div>
 
 
+
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'YOUR_INSTAGRAM_ACCESS_TOKEN_GOES_HERE'
+	});
+	userFeed.run();
+	</script>
 </body>
 </html>
