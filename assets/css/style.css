@@ -1983,6 +1983,7 @@ section {
 .testimonials .swiper-pagination {
   margin-top: 30px;
   position: relative;
+  font-size:22px;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
