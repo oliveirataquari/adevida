@@ -2033,7 +2033,8 @@ section {
 }
 @media(max-width:748px){ 
  .tiago-lista-contatos li {
-    font-size:12px !important;
+   font-size:12px !important;
+   text-align:left;
   }
 }
 .tiago-lista-contatos li i {
