@@ -2031,6 +2031,11 @@ section {
   -moz-box-shadow: 0px 32px 10px -20px rgba(0,0,0,0.1);
   box-shadow: 0px 32px 10px -20px rgba(0,0,0,0.1);
 }
+@media(max-width:748px){ 
+ .tiago-lista-contatos li {
+    font-size:14px;
+  }
+}
 .tiago-lista-contatos li i {
   margin-right: 15px;
 }
