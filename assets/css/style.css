@@ -1939,8 +1939,16 @@ section {
   padding-top: 120px;
   padding-bottom: 120px;
   margin-top: 20px;
+}
+
+ @media (max-width: 769px) {
+  .testimonials {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
  }
 
+  
 .testimonials .section-header {
   margin-bottom: 80px;
   margin-top: 80px;
@@ -1986,6 +1994,12 @@ section {
   font-size:22px;
 }
 
+@media (max-width: 769px){
+  .testimonials .swiper-pagination {
+    margin-top: 10px;
+  }
+}
+  
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
