@@ -1922,3 +1922,7 @@ section {
 
 .tiago-bible { color:#fff; font-style: normal !important; font-size: 14px !important; }
 .tiago-bible i { color:#ffffff91; margin-right: 6px;  }
+
+.tiago-anima-hands-cta {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
