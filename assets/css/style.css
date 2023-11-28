@@ -933,7 +933,7 @@ section {
   padding: 100px 0;
 }
 
-.cta .animated {
+#cta .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
