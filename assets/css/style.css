@@ -934,7 +934,7 @@ section {
 }
 
 #cta .animated {
-    animation: up-down right-left 1s ease-in-out infinite alternate-reverse both;
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
 
 @media(max-width:748px){
