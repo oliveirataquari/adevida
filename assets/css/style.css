@@ -1095,21 +1095,24 @@ section {
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
-  left: 15px;
+  left: 10px;
   bottom: 0;
   z-index: 3;
-  right: 15px;
+  right: 10px;
   transition: all 0.3s;
-  background: rgba(55, 81, 126, 0.8);
+  /* background: rgba(55, 81, 126, 0.8); */
+  background: blue;
   padding: 10px 15px;
+  padding-top:50px;
+  padding-bottom: 50px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
+  font-size: 30px;
   color: #fff;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
@@ -1120,12 +1123,13 @@ section {
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
 .portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
+  /*position: absolute;
+  right: 40px;*/
+  font-size: 16px;
+ /* top: calc(50% - 18px);*/
   color: #fff;
   transition: 0.3s;
+  padding-right: 20px;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
