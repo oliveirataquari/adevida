@@ -1915,7 +1915,9 @@ section {
  .tiago-lista-contatos li {
    font-size:12px !important;
    text-align:left;
-   margin-bottom:50px !important;
+  }
+  .tiago-lista-contatos {
+    margin-bottom:50px !important;
   }
 }
 .tiago-lista-contatos li i {
