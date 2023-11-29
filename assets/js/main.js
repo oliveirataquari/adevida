@@ -229,7 +229,7 @@
 
 
 /**
-   * Clients Slider
+   * Clients Slider (apoiadores)
    */
 new Swiper('.recent-photos-slider', {
   speed: 500,
@@ -246,7 +246,7 @@ new Swiper('.recent-photos-slider', {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20
     },
     640: {
