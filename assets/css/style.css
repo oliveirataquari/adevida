@@ -1343,6 +1343,28 @@ section {
   }
 }
 
+
+
+/*--------------------------------------------------------------
+# Gallery 
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1939,6 +1961,21 @@ section {
 
 /* ===== CSS ADICIONAL ===== */
 
+
+.btn-instagram {
+	padding:12px 20px 12px 20px;
+	border:none;
+	background: #f09433; 
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+	
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+  }
+.btn-instagram i { margin-right:10px }
 
 /* Aumenta o tamanho das imagens do carousel slider de clientes */
 .clients .swiper-wrapper .swiper-slide  {
